@@ -19,9 +19,7 @@
     "url": "https://github.com/harshadsph/urlToLocal/issues"
   },
   "homepage": "https://github.com/harshadsph/urlToLocal",
-  "devDependencies": {
-    "fs": "0.0.2",
-    "http": "0.0.0"
-  },
-  "dependencies": {}
+  "bin": {
+    "url2local": "index.js"
+  }
 }
