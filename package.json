@@ -1,0 +1,27 @@
+{
+  "name": "urlToLocal",
+  "version": "0.0.0",
+  "description": "This node js module is used for copying URL files on local machine",
+  "main": "index.js",
+  "scripts": {
+    "test": "urltolocal"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/harshadsph/urlToLocal"
+  },
+  "keywords": [
+    "urltolocal"
+  ],
+  "author": "Harshad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harshadsph/urlToLocal/issues"
+  },
+  "homepage": "https://github.com/harshadsph/urlToLocal",
+  "devDependencies": {
+    "fs": "0.0.2",
+    "http": "0.0.0"
+  },
+  "dependencies": {}
+}
