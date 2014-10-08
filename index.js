@@ -1,3 +1,4 @@
+#! /usr/bin/env nodejs
 /**
  * Copy files from URL to local machine
  *
@@ -6,8 +7,9 @@
  */
 "use strict";
 
-var http = require('http');
 var fs = require('fs');
+var http = require('http');
+
  
 module.exports = {
   urlToLocal: function(URL) {
