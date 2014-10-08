@@ -11,9 +11,3 @@ var fs = require('fs');
 var http = require('http');
 
 console.log("HARSHAD");
-var currentFile = window.location.pathname.split("/").pop();
-console.log(currentFile);
-var file = fs.createWriteStream(currentFile);
-var request = http.get(URL, function(response) {
-	response.pipe(file);
-});
