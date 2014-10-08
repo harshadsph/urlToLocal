@@ -10,9 +10,7 @@
 var fs = require('fs');
 var http = require('http');
 
- 
-module.exports = {
-  urlToLocal: function(URL) {
+urlToLocal: function(URL) {
 		
 		var currentFile = window.location.pathname.split("/").pop();
 		console.log(currentFile);
@@ -21,5 +19,4 @@ module.exports = {
 			response.pipe(file);
 		});
 		
-  }
-};
+  };
