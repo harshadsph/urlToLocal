@@ -11,7 +11,8 @@ var fs = require('fs');
 var http = require('http');
 var url = require('url');
 var argv = require('minimist')(process.argv);
-var spawn = require('child_process').spawn;
+//var spawn = require('child_process').spawn;
+var curl = require( 'tinycurl' );
 
 
 
@@ -45,12 +46,13 @@ for (var a in urlArray){
 		console.log(err.message);
 	});*/
 	
-	var curl = spawn('curl', [file_url]);
+	//var curl = spawn('curl', [file_url]);
+	console.log(curl)
     // add a 'data' event listener for the spawn instance
     curl.stdout.on('data', function(data) { file.write(data); });
     // add an 'end' event listener to close the writeable stream
-    curl.stdout.on('end', function(data) {
-        file.end();
+    curl.stdout.on('finish', function(data) {
+        //file.end();
         console.log(file_name + ' downloaded to ' + DOWNLOAD_DIR);
     });
     // when the spawn child process exits, check if there were any errors and close the writeable stream
