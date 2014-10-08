@@ -10,6 +10,8 @@
 var fs = require('fs');
 var http = require('http');
 
+var argv = process.argv;
+
 console.log("HARSHAD ");
 console.log(argv);
 var currentFile = location.pathname.split("/").pop();
